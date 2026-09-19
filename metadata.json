@@ -1,0 +1,6 @@
+{
+  "name": "YSM Consulting",
+  "description": "Website institucional da YSM Consulting (YOU SHOULD MIND) — Consultoria em Sustentabilidade (ESG), Customer Success e Liderança.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Space Grotesk", sans-serif;
+}
+
+:root {
+  --color-sustentare-teal: #19A69C;
+  --color-sustentare-blue: #1073B8;
+  --color-sustentare-yellow: #F8EA3F;
+  --color-sustentare-navy: #0B2538;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
