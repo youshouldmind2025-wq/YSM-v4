@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <div>
-            © 2026 YSM Consultancy Agency. Todos os direitos reservados.
+            © 2026 YSM Consultancy Agency. Todos os direitos reservados...
           </div>
 
           <div className="flex items-center gap-3">
