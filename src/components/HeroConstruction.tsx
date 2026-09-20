@@ -92,10 +92,10 @@ export const HeroConstruction: React.FC<HeroConstructionProps> = ({ onScrollToPr
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
-        {/* Top Status Pill - Adjusted for dark background */}
-        <div className="flex flex-wrap items-center gap-3 mb-6 sm:mb-8">
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#F8EA3F]/10 border border-[#F8EA3F]/30 text-[#F8EA3F] text-xs font-semibold shadow-xs backdrop-blur-sm">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#F8EA3F] animate-pulse" />
+        {/* Top Status Pill - Adjusted for prominence */}
+        <div className="flex flex-wrap items-center justify-center mb-10 sm:mb-12">
+          <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-[#F8EA3F] border-2 border-white/20 text-[#0B2538] text-sm font-bold shadow-xl backdrop-blur-md animate-bounce-slow">
+            <span className="w-3 h-3 rounded-full bg-teal-600 animate-pulse" />
             <span>Website em Construção &amp; Manutenção</span>
           </div>
         </div>
@@ -103,17 +103,19 @@ export const HeroConstruction: React.FC<HeroConstructionProps> = ({ onScrollToPr
         {/* Hero Main Block */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           
-          {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-['Plus_Jakarta_Sans'] leading-[1.12]">
-            Este website está em <span className="text-[#19A69C] underline decoration-[#F8EA3F] decoration-4 underline-offset-8">construção</span>.
-          </h1>
+          {/* Main Logo instead of Headline */}
+          <div className="mb-10 animate-fade-in">
+            <img 
+              src="/Logo_Name_W.png" 
+              alt="YOU SHOULD MIND" 
+              className="h-20 sm:h-28 lg:h-36 w-auto object-contain drop-shadow-2xl"
+              referrerPolicy="no-referrer"
+            />
+          </div>
 
           {/* Submessage */}
-          <p className="mt-6 text-lg sm:text-xl text-slate-200 font-normal leading-relaxed max-w-2xl text-center">
-            Estamos a preparar uma nova experiência alinhada com a visão<br />
-            <strong className="block mt-2 font-black text-3xl sm:text-4xl text-white tracking-tight">
-              YOU SHOULD MIND
-            </strong>
+          <p className="text-lg sm:text-xl text-slate-100 font-medium leading-relaxed max-w-2xl text-center drop-shadow-md">
+            Estamos a preparar uma nova experiência alinhada com a nossa visão.
           </p>
 
           {/* Key Phrase Highlight Card */}

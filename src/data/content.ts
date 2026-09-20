@@ -2,7 +2,7 @@ import { ConsultantBio, PartnerCompany } from '../types.ts';
 
 export const CONSULTANT_DATA: ConsultantBio = {
   name: 'Ruy Ferreira Amaral',
-  title: 'Founder/CEO da YSM Consultancy Agency',
+  title: 'Founder/CEO YSM Consultancy Agency',
   agencyRole: '',
   photo: '/ruy-ferreira-amaral.jpg',
   specializations: [
@@ -19,6 +19,7 @@ export const CONSULTANT_DATA: ConsultantBio = {
     'Membro do Painel de Peritos da Consumer Choice para o Prémio “Escolha Sustentável”.',
     'Director de Sustentabilidade e Impacto Social da PGA Portugal.',
     'Co‑Coordenador do Grupo Luso‑Brasileiro de Sustentabilidade em Lisboa.',
+    'ex-PCA e CEO de Fundação Social de âmbito nacional, por 25 anos.',
   ],
   education: [
     'Formado em Gestão; Mestrando em Estudos Sociais do Ambiente e Sustentabilidade (ISCTE).',
@@ -38,7 +39,7 @@ export const PARTNER_COMPANIES: PartnerCompany[] = [
   {
     id: 'brain-global',
     name: 'Brain Global',
-    category: 'Estratégia & Inovação Global',
+    category: 'Produção Media & Inovação',
     url: 'https://brain.global/',
     description: 'Uma das maiores referências no mercado do entretenimento e comunicação em Portugal.',
   },

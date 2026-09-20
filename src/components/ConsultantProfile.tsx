@@ -75,8 +75,22 @@ export const ConsultantProfile: React.FC = () => {
             
             {/* Photograph Container (Full Width Square) */}
             <div className="relative w-full aspect-square overflow-hidden border-b border-slate-200/60 bg-gradient-to-br from-[#0B2538] to-teal-900 mx-auto">
-              {/* Fallback Text: Displayed when image is not available, fails to load, or is loading */}
-              {(!imageLoaded || imageFailed) && (
+              {/* Consultant Photo: Scaled slightly to crop out the watermark text */}
+              {!imageFailed && (
+                <img 
+                  src="/ruy-ferreira-amaral.jpg" 
+                  alt={CONSULTANT_DATA.name}
+                  onLoad={() => setImageLoaded(true)}
+                  onError={() => setImageFailed(true)}
+                  className={`absolute inset-0 w-full h-full object-cover object-[68%_25%] scale-[1.12] z-10 transition-opacity duration-300 ${
+                    imageLoaded ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                  }`}
+                  referrerPolicy="no-referrer"
+                />
+              )}
+              
+              {/* Fallback Display (Only if image fails completely) */}
+              {imageFailed && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center select-none z-0">
                   <div className="text-4xl font-extrabold font-['Space_Grotesk'] tracking-wider text-white mb-2">
                     RFA
@@ -85,20 +99,6 @@ export const ConsultantProfile: React.FC = () => {
                     {CONSULTANT_DATA.name}
                   </span>
                 </div>
-              )}
-
-              {/* Consultant Photo: Centered on the speaker (focal point at 68% width, 28% height) */}
-              {!imageFailed && (
-                <img 
-                  src="/ruy-ferreira-amaral.jpg" 
-                  alt={CONSULTANT_DATA.name}
-                  onLoad={() => setImageLoaded(true)}
-                  onError={() => setImageFailed(true)}
-                  className={`absolute inset-0 w-full h-full object-cover object-[68%_28%] z-10 transition-opacity duration-300 ${
-                    imageLoaded ? 'opacity-100' : 'opacity-0 pointer-events-none'
-                  }`}
-                  referrerPolicy="no-referrer"
-                />
               )}
             </div>
 
